@@ -145,7 +145,7 @@ function App() {
       <div className="card">
         <h3>All Items</h3>
 
-       // <button onClick={getAll}>Get All</button>
+      /*  <button onClick={getAll}>Get All</button> */
 
         <table>
           <thead>
