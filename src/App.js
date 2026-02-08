@@ -4,9 +4,9 @@ import "./App.css";
 //const API = "http://localhost:8080/api/items";
 //const API = "https://<tera-railway-url>/api/items";
 //const API = "https://item-api-production-ab3d.up.railway.app";
-//const API = "http://localhost:8080/api/items"
+const API = "http://localhost:8080/api/items"
 //const API = "https://osteopathically-unhuzzaed-julian.ngrok-free.dev/api/items";
-const API =  "https://osteopathically-unhuzzaed-julian.ngrok-free.dev/api/items";
+//const API =  "https://osteopathically-unhuzzaed-julian.ngrok-free.dev/api/items";
 
 
 function App() {
