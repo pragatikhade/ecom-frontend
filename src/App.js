@@ -70,16 +70,16 @@ function App() {
     }
   };
 
-  // ✅ Get all
-  const getAll = async () => {
-    try {
-      const res = await fetch(API);
-      const data = await res.json();
-      setItems(data);
-    } catch (e) {
-      setMsg("Error loading items");
-    }
-  };
+  // // ✅ Get all
+  // const getAll = async () => {
+  //   try {
+  //     const res = await fetch(API);
+  //     const data = await res.json();
+  //     setItems(data);
+  //   } catch (e) {
+  //     setMsg("Error loading items");
+  //   }
+  // };
 
   return (
     <div className="container">
@@ -141,34 +141,34 @@ function App() {
         )}
       </div>
 
-      {/* Get all */}
-      <div className="card">
-        <h3>All Items</h3>
+     //  {/* Get all */}
+     //  <div className="card">
+     //    <h3>All Items</h3>
 
-      /*  <button onClick={getAll}>Get All</button> */
+     // <button onClick={getAll}>Get All</button> 
 
-        <table>
-          <thead>
-            <tr>
-              <th>Id</th>
-              <th>Name</th>
-              <th>Price</th>
-              <th>Description</th>
-            </tr>
-          </thead>
+     //    <table>
+     //      <thead>
+     //        <tr>
+     //          <th>Id</th>
+     //          <th>Name</th>
+     //          <th>Price</th>
+     //          <th>Description</th>
+     //        </tr>
+     //      </thead>
 
-          <tbody>
-            {items.map((it) => (
-              <tr key={it.id}>
-                <td>{it.id}</td>
-                <td>{it.name}</td>
-                <td>{it.price}</td>
-                <td>{it.description}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
+     //      <tbody>
+     //        {items.map((it) => (
+     //          <tr key={it.id}>
+     //            <td>{it.id}</td>
+     //            <td>{it.name}</td>
+     //            <td>{it.price}</td>
+     //            <td>{it.description}</td>
+     //          </tr>
+     //        ))}
+     //      </tbody>
+     //    </table>
+     //  </div>
 
       {msg && <p>{msg}</p>}
 
